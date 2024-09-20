@@ -1,0 +1,110 @@
+.ok{
+    background-color: goldenrod;
+    font-weight: bold;
+    padding: 10px;
+    border:solid 1px  black;
+    border-radius: 15px;
+    transition: 3s;
+}
+
+#demoId {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+}
+
+.demoClass {
+    font-size: 18px;
+    color: black;
+}
+
+.demoQuery {
+    font-size: 18px;
+    color: black;
+}
+
+.demoQueryAll {
+    font-size: 18px;
+    color: black;
+    background-color: none;
+}
+
+/* Style pour le formulaire et ses éléments */
+form {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.shadow-lg {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.shadow-lg {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+
+/* Conteneur de l'animation */
+#container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+    margin-bottom: 20px;
+}
+
+/* Élément animé */
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+}
+

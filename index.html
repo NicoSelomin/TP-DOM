@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP DOM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top mb-5">
+        <div class="container">
+            <h1 class="text-white mx-auto">
+                TP DEMOS JS DOM <br>
+            </h1>
+        </div>
+    </nav>
+    <main class="mt-5 py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Dropdown for Introduction au DOM -->
+                <div class="accordion w-100 mb-4" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntro" aria-expanded="false" aria-controls="collapseIntro">
+                                <h2 class="text-center">Introduction DOM</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseIntro" class="accordion-collapse collapse" aria-labelledby="headingIntro"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : Qu'est-ce que le DOM -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>Qu'est-ce que le DOM</h3>
+                                            <p>
+                                                « Le modèle d'objet de document (DOM) du W3C est une interface
+                                                indépendante de la plate-forme et du langage qui permet aux programmes
+                                                et aux scripts d'accéder et de mettre à jour dynamiquement le contenu,
+                                                la structure et le style d'un document. »
+                                            </p>
+                                            La norme DOM du W3C est séparée en 3 parties différentes :
+                                            <ul>
+                                                <li>Core DOM - modèle standard pour tous les types de documents</li>
+                                                <li>XML DOM - modèle standard pour les documents XML</li>
+                                                <li>HTML DOM - modèle standard pour les documents HTML</li>
+                                            </ul>
+                                            <h3>C'est quoi donc HTML DOM ?</h3>
+                                            <p>Le DOM HTML est un modèle d'objet standard et une interface de
+                                                programmation pour HTML. Il définit :</p>
+                                            <ul>
+                                                <li>Les éléments HTML en tant que <b>objets</b></li>
+                                                <li>Les <b>propriétés</b> de tous les éléments HTML</li>
+                                                <li>Les <b>méthodes</b> pour accéder à tous les éléments HTML</li>
+                                                <li>Les <strong>événements</strong> pour tous les éléments HTML</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Deuxième colonne : L'arbre des objets HTML DOM -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>L'arbre des objets HTML DOM</h3>
+                                            <img src="https://www.w3schools.com/js/pic_htmltree.gif"
+                                                class="img-fluid align-center" alt="Arbre DOM">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Dropdown for JavaScript - HTML DOM Methods -->
+                <div class="accordion w-100 mb-4" id="accordionMethodDOM">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseMethod" aria-expanded="false" aria-controls="collapseMethod">
+                                <h2 class="text-center">JavaScript - HTML DOM Methods</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseMethod" class="accordion-collapse collapse" aria-labelledby="headingIntro"
+                            data-bs-parent="#accordionMethodDOM">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : cours -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>L'interface de programmation DOM</h3>
+                                            <p>
+                                                Le DOM HTML est accessible avec JavaScript (et avec d'autres langages de
+                                                programmation). <br>
+
+                                                Dans le DOM, tous les éléments HTML sont définis comme des objets .<br>
+
+                                                L'interface de programmation correspond aux propriétés et aux méthodes
+                                                de chaque objet.<br>
+
+                                                Une propriété est une valeur que vous pouvez obtenir ou définir (comme
+                                                modifier le contenu d'un élément HTML).<br>
+
+                                                Une méthode est une action que vous pouvez effectuer (comme ajouter ou
+                                                supprimer un élément HTML).
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Deuxième colonne : Demo -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Demo simple</h3>
+                                            <p>Dans cette Demo, nous allons modifier le contenu d'une balise <b>H1</b>
+                                                vide.</p>
+                                            <h1 class="p-4 bg-dark text-white" id="demoH1"></h1>
+                                            <p>
+                                                Dans ce exemple, <b>getElementById</b> est une méthode , tandis que
+                                                <b>innerHTML</b> est une propriété .
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Dropdown for JavaScript - Document JavaScript HTML DOM -->
+                <div class="accordion w-100 mb-4" id="accordionDocumentHTML">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDocument" aria-expanded="false"
+                                aria-controls="collapseDocument">
+                                <h2 class="text-center">Document JavaScript HTML DOM </h2>
+                            </button>
+                        </h2>
+                        <div id="collapseDocument" class="accordion-collapse collapse" aria-labelledby="headingIntro"
+                            data-bs-parent="#accordionDocumentHTML">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : cours -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>L'objet "<em>document</em>" du HTML DOM</h3>
+                                            <p>
+                                                L'objet <strong>document</strong> représente votre page Web.
+
+                                                Si vous souhaitez accéder à un élément d'une page HTML, vous commencez
+                                                toujours par accéder à l'objet document.
+                                            </p>
+                                            <p>
+                                                Voici quelques exemples de la manière dont vous pouvez utiliser l'objet
+                                                <b>document</b> pour accéder au HTML et le manipuler.
+                                            </p>
+                                            <div class="mes_tableau">
+                                                <!-- Accordion for Recherche d'éléments HTML -->
+                                                <div class="accordion" id="accordionExample1">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingOne">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                aria-expanded="false" aria-controls="collapseOne">
+                                                                Recherche d'éléments HTML
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample1">
+                                                            <div class="accordion-body">
+                                                                <table class="table table-striped">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Method</th>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.getElementById(<em>id</em>)
+                                                                            </td>
+                                                                            <td>Recherche un élément grâce à son id</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.getElementsByTagName(<em>name</em>)
+                                                                            </td>
+                                                                            <td>Recherche un élément grâce à son nom
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.getElementsByClassName(<em>name</em>)
+                                                                            </td>
+                                                                            <td>Recherche un élément grâce au nom de sa
+                                                                                classe</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Accordion for Modification d'éléments HTML -->
+                                                <div class="accordion mt-3" id="accordionExample2">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                                Modifcation d'éléments HTML via propriétés
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingTwo"
+                                                            data-bs-parent="#accordionExample2">
+                                                            <div class="accordion-body">
+                                                                <table class="table table-striped">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Property</th>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><em>element</em>.innerHTML = <em>new
+                                                                                    html content</em></td>
+                                                                            <td>Change le contenu HTML interne d'un
+                                                                                élément</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><em>element</em>.<em>attribute = new
+                                                                                    value</em></td>
+                                                                            <td>Change la valeur de l'attribut d'un
+                                                                                élément HTML</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><em>element</em>.style.<em>property =
+                                                                                    new style</em></td>
+                                                                            <td>Change le style d'un élément HTML</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Method</th>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><em>element</em>.setAttribute<em>(attribute,
+                                                                                    value)</em></td>
+                                                                            <td>Change la valeur de l'attribut d'un
+                                                                                élément HTML</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mt-3">D'autres opérations sont possibles comme la création
+                                                    d'éléments, la suppression, etc.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Deuxième colonne : Demo -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Demo simple</h3>
+                                            <p>Dans cette Demo, nous mettre tout en pratique d'un seul avec à la fois,
+                                                <br> le changement de classe, de style, de contenu...
+                                            </p>
+                                            <h1 id="demo2">Cliquez moi</h1>
+                                            <p>Dans cette démo, on a utilisé les notions suivantes :</p>
+                                            <ul>
+                                                <li>Recherche d'un élément avec <code>getElementById</code></li>
+                                                <li>Ajout d'une classe avec <code>classList.add</code></li>
+                                                <li>Modification du contenu HTML avec <code>innerHTML</code></li>
+                                                <li>Modification du style CSS avec <code>style</code></li>
+                                                <li>Création d'un élément avec <code>document.createElement</code></li>
+                                                <li>Modification du contenu de l'élément créé avec
+                                                    <code>innerHTML</code>
+                                                </li>
+                                                <li>Ajout d'un élément à un autre élément avec <code>appendChild</code>
+                                                </li>
+                                                <li>Gestion des événements avec <code>addEventListener</code></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Dropdown for JavaScript - Recherche Element -->
+                <div class="accordion w-100 mb-4" id="accordionRechercheElement">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseRechercheElement" aria-expanded="false"
+                                aria-controls="collapseRechercheElement">
+                                <h2 class="text-center">Recherche d'éléments HTMM </h2>
+                            </button>
+                        </h2>
+                        <div id="collapseRechercheElement" class="accordion-collapse collapse"
+                            aria-labelledby="headingIntro" data-bs-parent="#accordionRechercheElement">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : cours -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>L'objet "<em>document</em>" du HTML DOM</h3>
+                                            <p>
+                                                L'objet <strong>document</strong> représente votre page Web.
+
+                                                Si vous souhaitez accéder à un élément d'une page HTML, vous commencez
+                                                toujours par accéder à l'objet document.
+                                            </p>
+                                            <p>
+                                                Voici quelques exemples de la manière dont vous pouvez utiliser l'objet
+                                                <b>document</b> pour accéder au HTML et le manipuler.
+                                            </p>
+                                            <div class="mes_tableau">
+                                                <!-- Accordion for Recherche d'éléments HTML -->
+                                                <div class="accordion" id="accordionExample1">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingOne">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                aria-expanded="false" aria-controls="collapseOne">
+                                                                Recherche d'éléments HTML
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample1">
+                                                            <div class="accordion-body">
+                                                                <table class="table table-striped">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Method</th>
+                                                                            <th>Description</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.getElementById(<em>id</em>)
+                                                                            </td>
+                                                                            <td>Recherche un élément grâce à son id</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.getElementsByTagName(<em>name</em>)
+                                                                            </td>
+                                                                            <td>Recherche tous les éléments avec un
+                                                                                certain nom de balise</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.getElementsByClassName(<em>name</em>)
+                                                                            </td>
+                                                                            <td>Recherche tous les éléments qui
+                                                                                possèdent une certaine classe</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.querySelector(<em>selector</em>)
+                                                                            </td>
+                                                                            <td>Retourne le premier élément
+                                                                                correspondant à un sélecteur CSS</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>document.querySelectorAll(<em>selector</em>)
+                                                                            </td>
+                                                                            <td>Retourne tous les éléments correspondant
+                                                                                à un sélecteur CSS sous forme de
+                                                                                NodeList</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Deuxième colonne : Demo -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Demo simple</h3>
+                                            <!-- Demo 1: getElementById -->
+                                            <h2 id="demoId">Cliquez-moi pour changer mon texte</h2>
+
+                                            <!-- Demo 2: getElementsByTagName -->
+                                            <h2>Item 1</h2>
+                                            <h2>Item 2</h2>
+                                            <h2>Item 3</h2>
+                                            <button id="changeTag">Change tous les titres</button>
+
+                                            <!-- Demo 3: getElementsByClassName -->
+                                            <p class="demoClass">Paragraphe 1</p>
+                                            <p class="demoClass">Paragraphe 2</p>
+                                            <button id="changeClass">Changer la couleur des paragraphes</button>
+
+                                            <!-- Demo 4: querySelector -->
+                                            <p class="demoQuery">Paragraphe avec querySelector</p>
+                                            <button id="selectSingle">Sélectionner et changer un paragraphe</button>
+
+                                            <!-- Demo 5: querySelectorAll -->
+                                            <p class="demoQueryAll">Paragraphe 1 avec querySelectorAll</p>
+                                            <p class="demoQueryAll">Paragraphe 2 avec querySelectorAll</p>
+                                            <button id="selectAll">Sélectionner et changer tous les paragraphes</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown for JavaScript - Form Validation -->
+                <div class="accordion w-100 mb-4" id="accordionRechercheElement">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseValidationForm" aria-expanded="false"
+                                aria-controls="collapseValidationForm">
+                                <h2 class="text-center">Validation de Formulaire en JavaScript</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseValidationForm" class="accordion-collapse collapse"
+                            aria-labelledby="headingValidationForm" data-bs-parent="#accordionValidationForm">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : cours -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>Validation de Formulaire en JavaScript</h3>
+                                            <p>
+                                                La validation de formulaire en JavaScript permet de vérifier que les
+                                                champs du formulaire
+                                                contiennent les données attendues avant l'envoi au serveur. Cela
+                                                améliore l'expérience utilisateur
+                                                et évite des requêtes inutiles au serveur en cas de données incorrectes.
+                                            </p>
+                                            <p>
+                                                Une des méthodes les plus courantes pour valider un formulaire est
+                                                d'utiliser la méthode
+                                                <b>onsubmit</b> sur le formulaire pour exécuter une fonction JavaScript
+                                                avant l'envoi des données.
+                                            </p>
+                                            <h4>Exemple</h4>
+                                            <ul>
+                                                <li>Recherche d'un formulaire avec <code>document.forms</code></li>
+                                                <li>Validation d'un champ vide</li>
+                                                <li>Prévention de l'envoi du formulaire avec <code>return false</code>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Deuxième colonne : Demo -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Demo simple</h3>
+                                            <form name="myForm" action="/action_page.php" id="myForm" method="post">
+                                                <label for="fname">Nom :</label>
+                                                <input type="text" id="fname" name="fname">
+                                                <br><br>
+                                                <input type="submit" value="Soumettre">
+                                            </form>
+                                            <p>Dans cette démo, on a utilisé les notions suivantes :</p>
+                                            <ul>
+                                                <li>Recherche d'un élément avec <code>document.forms</code></li>
+                                                <li>Validation d'un champ vide</li>
+                                                <li>Affichage d'un message d'erreur avec <code>alert</code></li>
+                                                <li>Prévention de l'envoi du formulaire avec <code>return false</code>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Dropdown for JavaScript - CSS Change -->
+                <div class="accordion w-100 mb-4" id="accordionChangeCSS">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseChangeCSS" aria-expanded="false"
+                                aria-controls="collapseChangeCSS">
+                                <h2 class="text-center">Modifier le CSS en JavaScript</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseChangeCSS" class="accordion-collapse collapse"
+                            aria-labelledby="headingChangeCSS" data-bs-parent="#accordionChangeCSS">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : cours -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>Modifier le CSS en JavaScript</h3>
+                                            <p>
+                                                Le DOM HTML permet à JavaScript de modifier le style des éléments HTML à
+                                                l'aide de la propriété
+                                                <code>style</code>. En utilisant cette méthode, vous pouvez modifier
+                                                diverses propriétés CSS comme la
+                                                couleur, la visibilité, ou encore la taille des éléments.
+                                            </p>
+                                            <p>
+                                                Pour modifier le style d'un élément HTML, vous utilisez cette syntaxe :
+                                            </p>
+                                            <pre><code>document.getElementById(id).style.property = "new value";</code></pre>
+                                            <p>
+                                                Par exemple, pour changer la couleur du texte d'un élément
+                                                <code>&lt;p&gt;</code> :
+                                            </p>
+                                            <pre><code>document.getElementById("p2").style.color = "blue";</code></pre>
+                                            <h4>Utilisation des événements</h4>
+                                            <p>
+                                                Vous pouvez également déclencher des changements de style en réponse à
+                                                des événements, tels que le
+                                                clic sur un bouton ou le survol d'un élément.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Deuxième colonne : Demo -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Demo simple</h3>
+
+                                            <!-- Demo: Changer la couleur du texte avec un événement -->
+                                            <h2 id="demoHeading">Change ma couleur au click!</h2>
+                                            <button id="changeColorButton" class="button">Cliquez-moi pour changer la
+                                                couleur</button>
+
+                                            <!-- Demo: Rendre un élément invisible -->
+                                            <h2 id="demoVisibility">Cache moi!</h2>
+                                            <button id="hideElementButton" class="button">Cliquez-moi pour cacher
+                                                l'élément</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Dropdown for JavaScript - Animation -->
+                <div class="accordion w-100 mb-4" id="accordionAnimation">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAnimation" aria-expanded="false"
+                                aria-controls="collapseAnimation">
+                                <h2 class="text-center">Animation avec JavaScript</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseAnimation" class="accordion-collapse collapse"
+                            aria-labelledby="headingAnimation" data-bs-parent="#accordionAnimation">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : cours -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>Création d'animations avec JavaScript</h3>
+                                            <p>
+                                                Pour créer des animations en HTML avec JavaScript, nous devons utiliser
+                                                un élément conteneur et
+                                                un élément animé, puis programmer des changements progressifs dans le
+                                                style de l'élément animé.
+                                            </p>
+                                            <p>
+                                                Voici un exemple de structure de base pour une animation :
+                                            </p>
+                                            <pre><code>&lt;div id="container"&gt;
+                                                &lt;div id="animate"&gt;My animation will go here&lt;/div&gt;
+                                                &lt;/div&gt;</code></pre>
+                                            <h4>Le code JavaScript</h4>
+                                            <p>
+                                                L'animation est réalisée en programmant des changements progressifs dans
+                                                le style d'un élément. Vous
+                                                pouvez utiliser un intervalle de temps pour rendre ces changements
+                                                continus.
+                                            </p>
+                                            <pre>
+                                                <code>id = setInterval(frame, 5);
+                                                function frame() {
+                                                if (/* test d'arrêt */) {
+                                                    clearInterval(id);
+                                                } else {
+                                                    /* code pour changer le style de l'élément */
+                                                }
+                                                }</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                    <!-- Deuxième colonne : Demo -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Demo Animation</h3>
+                                            <div id="container">
+                                                <div id="animate"></div>
+                                            </div>
+                                            <button id="startAnimationButton">Démarrer l'animation</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
