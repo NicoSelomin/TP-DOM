@@ -583,9 +583,11 @@
                                             <p>
                                                 Voici un exemple de structure de base pour une animation :
                                             </p>
-                                            <pre><code>&lt;div id="container"&gt;
-                                                &lt;div id="animate"&gt;My animation will go here&lt;/div&gt;
-                                                &lt;/div&gt;</code></pre>
+                                            <code>
+                                                &lt;div id="container"&gt;<br>
+                                                    &nbsp;&nbsp;&lt;div id="animate"&gt;My animation will go here&lt;/div&gt;<br>
+                                                    &lt;/div&gt;                                                                                                      
+                                            </code>
                                             <h4>Le code JavaScript</h4>
                                             <p>
                                                 L'animation est réalisée en programmant des changements progressifs dans
@@ -593,7 +595,6 @@
                                                 pouvez utiliser un intervalle de temps pour rendre ces changements
                                                 continus.
                                             </p>
-                                            <pre>
                                                 <code>id = setInterval(frame, 5);
                                                 function frame() {
                                                 if (/* test d'arrêt */) {
@@ -602,7 +603,6 @@
                                                     /* code pour changer le style de l'élément */
                                                 }
                                                 }</code>
-                                            </pre>
                                         </div>
                                     </div>
                                     <!-- Deuxième colonne : Demo -->
