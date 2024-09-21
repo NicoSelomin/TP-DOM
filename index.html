@@ -623,6 +623,72 @@
 
                     </div>
                 </div>
+
+                <!-- Dropdown for JavaScript - Node -->
+                <div class="accordion w-100 mb-4" id="accordionDOM">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDOM" aria-expanded="false"
+                                aria-controls="collapseDOM">
+                                <h2 class="text-center">DOM Node</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseDOM" class="accordion-collapse collapse" aria-labelledby="headingDOM" data-bs-parent="#accordionDOM">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!-- Première colonne : Cours sur les nœuds DOM -->
+                                    <div class="col-5 shadow-lg">
+                                        <div>
+                                            <h3>Exploration des Nœuds DOM avec JavaScript</h3>
+                                            <p>
+                                                En HTML, chaque élément est représenté sous forme de nœud dans l'arbre DOM. Voici un exemple
+                                                basique de la structure DOM d'une page web simple :
+                                            </p>
+                                            <code>
+                                                &lt;html&gt;
+                                                &lt;head&gt;
+                                                    &lt;title&gt;DOM Example&lt;/title&gt;
+                                                &lt;/head&gt;
+                                                &lt;body&gt;
+                                                    &lt;h1&gt;Bienvenue dans le DOM&lt;/h1&gt;
+                                                    &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+                                                &lt;/body&gt;
+                                                &lt;/html&gt;
+                                            </code>
+                                            <h4>Code JavaScript pour Naviguer dans le DOM</h4>
+                                            <p>
+                                                En utilisant JavaScript, vous pouvez naviguer entre les nœuds, les enfants, les parents, et les frères/sœurs d'une manière dynamique. 
+                                                Voici un exemple de code pour accéder aux nœuds enfants :
+                                            </p>
+                                            <code>
+                                                let parentElement = document.getElementById("parent"); 
+                                                let childNodes = parentElement.childNodes;
+                                            </code>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Deuxième colonne : Démonstration des relations des nœuds -->
+                                    <div class="col-6 offset-1 shadow-lg">
+                                        <div>
+                                            <h3>Exemple Pratique</h3>
+                                            <div id="parent">
+                                                <h1 id="title">Titre principal</h1>
+                                                <p id="paragraph">Ceci est un texte dans un paragraphe.</p>
+                                            </div>
+                                            <button id="showNodesButton">Afficher les Nœuds</button>
+                                            <div id="result"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
             </div>
         </div>
 
